@@ -7,8 +7,9 @@ class Caller extends Component {
     state = {  }
     render() { 
         return ( 
-        <ErrorBoundary>
+        <ErrorBoundary >
             <User/>
+
          </ErrorBoundary> );
     }
 }

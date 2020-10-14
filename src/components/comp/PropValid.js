@@ -29,7 +29,7 @@ PropValid.propTypes = {
  // You can chain any of the above with `isRequired` to make sure a warning
   // is shown if the prop isn't provided.
  PropValid.defaultProps = {
-    propArray: [1,2,3,4,5],
+    propArray: 1,
     propBool: true,
     propFunc: function(e){return e},
     propNumber: 1,

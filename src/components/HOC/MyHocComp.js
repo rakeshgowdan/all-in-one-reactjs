@@ -2,10 +2,12 @@ import React, {Component} from 'react';
 import Hoc from './Hoc';
  
 
+
 class MyHocComp extends Component {
     
     render() { 
         return ( <div>  
+              <h1>Hoc is being invoked </h1>
             <h2>HOC Example</h2>  
             Higher Order Component Working Flow!!
             <p>The MyHocComp component wrapped inside another React component so that we can modify it. 

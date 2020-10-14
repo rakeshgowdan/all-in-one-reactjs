@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 // Create a context for the current theme which is "light" as the default.  
-const BtnColorContext = React.createContext('btn btn-darkyellow'); 
+const arayData=[1,2,3,4,];
+const BtnColorContext = React.createContext(arayData); 
 
 class AppCall extends Component {
     
@@ -13,6 +14,8 @@ class AppCall extends Component {
     render() { 
         return ( <BtnColorContext.Provider value="btn btn-danger">  
         <Button />  
+        {/*All comp to be accessed by data  */}
+        
       </BtnColorContext.Provider>  );
     }
 }

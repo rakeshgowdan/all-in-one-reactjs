@@ -3,9 +3,16 @@ import React, {Component} from 'react';
 export default function Hoc(HocComponent){  
     return class extends Component{  
         render(){  
+            console.log("HOC");
             return (  
                 <div>  
-                    <HocComponent></HocComponent>  
+                    {/*can describe parent/hoc comp */}
+                    <h1>Hoc is being invoked </h1>
+
+                    {/*Call Wrapped comp */}
+                    <HocComponent data="">
+
+                        </HocComponent>  
                 </div>  
   
             );  

@@ -10,11 +10,16 @@ class AppForceUpdate extends Component {
         this.forceUpdate();  
      };  
      //Each time when you click on ForceUpdate button, it will generate the random number. 
+     getData=()=>{
+        console.log("getData called ")
+     };
     render() { 
         return ( <div>  
             <h1>Example to generate random number</h1>  
             <h3>Random number: {Math.random()}</h3>  
             <button onClick = {this.forceUpdateState}>ForceUpdate</button>  
+
+            <button onClick={this.getData}>getdata</button>
         </div>  
          );
     }
